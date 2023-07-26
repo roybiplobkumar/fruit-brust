@@ -12,12 +12,27 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisy ui cdn link end  -->
+    <!-- google font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <!-- google font lato -->
+
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <!-- this is header area  -->
-    <header class="container mx-auto ">
-     <nav >
-        <div class="navbar flex-row-reverse  lg:flex-row rounded-3xl bg-[#F85559]">
-          <div class="navbar-start  lg:navbar-end  ">
+  </head>
+
+  <body>
+    <header class="container mx-auto">
+      <nav>
+        <div
+          class="navbar flex-row-reverse lg:flex-row rounded-3xl bg-[#F85559]"
+        >
+          <div class="navbar-start lg:navbar-end">
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
                 <svg
@@ -37,7 +52,7 @@
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadowrounded-box "
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadowrounded-box"
               >
                 <li><a>Home</a></li>
                 <li>
@@ -48,62 +63,254 @@
               </ul>
             </div>
 
-            <div class="navbar-start hidden lg:flex ">
-                <ul class="menu flex-nowrap	  menu-horizontal px-1">
-                  <li><a>Home</a></li>
-                  <li>
-                    <a>About Us</a>
-                  </li>
-                  <li><a>Shop</a></li>
-                  <li><a>All Fruits</a></li>
-                </ul>
-              </div>
+            <div class="navbar-start hidden lg:flex">
+              <ul class="menu flex-nowrap menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li>
+                  <a>About Us</a>
+                </li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
           </div>
           <div>
-            <img src="images/logo.png" alt=""> <h3 class="w-60 text-xl  lg:text-4xl">Fruit Burst</h3>
+            <img src="images/logo.png" alt="" />
+            <h3 class="w-60 text-xl lg:text-4xl">Fruit Burst</h3>
           </div>
-         
 
-
-
-
-
-
-            <div class="form-control navbar-end  lg:flex-row hidden lg:flex mr-0">
-              <input  class="rounded-2xl py-2 px-3 " type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto" />
-            </div>
+          <div class="form-control navbar-end lg:flex-row hidden lg:flex mr-0">
+            <input
+              class="rounded-2xl py-2 px-3"
+              type="text"
+              placeholder="Search here"
+              class="input input-bordered w-24 md:w-auto"
+            />
+          </div>
         </div>
-      </nav> 
-     
+      </nav>
 
       <!-- this is banner section  -->
       <section>
-        <div class="hero h-[600px]" style="background-image: url(images/banner1.png);">
+        <div
+          class="hero h-[600px]"
+          style="background-image: url(images/banner1.png)"
+        >
           <div class="hero-overlay bg-opacity-20"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md text-white">
-              <h1 class="mb-5 text-4xl font-bold ">Exotic tastes at your doorstep</h1>
+              <h1 class="mb-5 text-4xl font-bold">
+                Exotic tastes at your doorstep
+              </h1>
               <p class="mb-5">We supply highly quality organic products</p>
-              <button class=" bg-[#F85559] border-none py-4 px-7  rounded-xl  text-xl  text-white">Shop Now</button>
+              <button
+                class="bg-[#F85559] border-none py-4 px-7 rounded-xl text-xl text-white"
+              >
+                Shop Now
+              </button>
             </div>
           </div>
         </div>
       </section>
       <!-- this is banner section  -->
-
-      
-  
     </header>
     <!-- header area end  -->
     <!-- main area start  -->
-    <main>
+    <main   class="container mx-auto">
       <!-- Deal of the day section  -->
 
+      <section>
+        <div class="flex">
+          <div>
+            <h3 class="text-5xl">Deal of the day</h3>
+            <p>
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <div>
+            <span class="countdown text-2xl">
+              <span style="--value: 10"> </span>
+              <h2 class="text-black">Min</h2>
+              : <span style="--value: 24"></span>:
+              <span style="--value: 44"></span>
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center gap-2">
+            <div class="card  w-full card-compact shadow-lg  ">
+              <figure class=""><img  src="images/fruit6.png" alt="Shoes" /></figure>
+              <div class="card-body text-center">
+                <h2 class="text-2xl text-center font-semibold my-4">12.90$ - 18.85$</h2>
+                <hr class="w-[144px] m-auto mb-2" />
+                <p class="font-medium text-[#12121299] mb-1">Apples</p>
+                <div class="rating flex gap-2 m-auto text-center mb-2">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                  />
+                </div>
+                <div class="card-actions justify-center">
+                  <button class="text-[#F85559] text-[18px]">Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="card  w-full card-compact shadow-lg">
+              <figure><img src="images/fruit6.png" alt="Shoes" /></figure>
+              <div class="card-body text-center">
+                <h2 class="text-2xl text-center font-semibold my-4">12.90$ - 18.85$</h2>
+                <hr class="w-[144px] m-auto mb-2" />
+                <p class="font-medium text-[#12121299] mb-1">Apples</p>
+                <div class="rating flex gap-2 m-auto text-center mb-2">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                  />
+                </div>
+                <div class="card-actions justify-center">
+                  <button class="text-[#F85559] text-[18px]">Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="card  w-full card-compact shadow-lg">
+              <figure><img src="images/fruit6.png" alt="Shoes" /></figure>
+              <div class="card-body text-center">
+                <h2 class="text-2xl text-center font-semibold my-4">12.90$ - 18.85$</h2>
+                <hr class="w-[144px] m-auto mb-2" />
+                <p class="font-medium text-[#12121299] mb-1">Apples</p>
+                <div class="rating flex gap-2 m-auto text-center mb-2">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                  />
+                </div>
+                <div class="card-actions justify-center">
+                  <button class="text-[#F85559] text-[18px]">Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="card  w-full card-compact shadow-lg">
+              <figure><img src="images/fruit6.png" alt="Shoes" /></figure>
+              <div class="card-body text-center">
+                <h2 class="text-2xl text-center font-semibold my-4">12.90$ - 18.85$</h2>
+                <hr class="w-[144px] m-auto mb-2" />
+                <p class="font-medium text-[#12121299] mb-1">Apples</p>
+                <div class="rating flex gap-2 m-auto text-center mb-2">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-red-400"
+                  />
+                </div>
+                <div class="card-actions justify-center">
+                  <button class="text-[#F85559] text-[18px]">Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+          class="bg-[#F85559] border-none py-4 px-7 rounded-xl text-xl text-white m-auto block my-28"
+        >
+          Shop Now
+        </button>
+        </div>
+      </section>
+
+      <!-- Deal of the day section  end -->
     </main>
     <!-- main area end  -->
     <!-- footer area start  -->
     <footer></footer>
     <!-- footer area end  -->
-  </head>
-  <body></body>
+  </body>
 </html>
